@@ -14,6 +14,33 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+    'backgroundc1': '#020617',
+    'backgroundc2': '#161C2A',
+    'backgroundc3': '#3F4D55',
+    'text':         '#DCD9E4',
+    'button':       '#D7CBB5',
+    'buttonh':      '#E4A695',
+            },
+            animation: {
+                'fade-in': 'fadeIn 1s ease-in-out forwards',
+                'slide-up': 'slideUp 0.8s ease-out forwards',
+                'scale-in': 'scaleIn 0.6s ease-out forwards',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0', transform: 'translateY(20px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+                slideUp: {
+                    '0%': { opacity: '0', transform: 'translateY(50px)' },
+                    '100%': { opacity: '1', transform: 'translateY(0)' },
+                },
+                scaleIn: {
+                    '0%': { opacity: '0', transform: 'scale(0.8)' },
+                    '100%': { opacity: '1', transform: 'scale(1)' },
+                },
+            },
         },
     },
 
